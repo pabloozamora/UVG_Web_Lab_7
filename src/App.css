@@ -24,16 +24,10 @@
 }
 
 .logo {
-  height: 6em;
+  height: 9.5em;
   will-change: filter;
   transition: filter 300ms;
   max-width: 200px;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #ee2800aa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #ee2800aa);
 }
 
 @keyframes logo-spin {

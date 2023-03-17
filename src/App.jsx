@@ -6,6 +6,7 @@ import mobile from './assets/mobile.svg'
 import logo from './assets/logo.svg'
 import './App.css'
 import { MessageSquare } from './components/MessageSquare/MessageSquare'
+import { SearchBar } from './components/SearchBar/SearchBar'
 
 function App() {
   const title1 = "Extensión de Navegador Privada"
@@ -18,6 +19,7 @@ function App() {
     <div className="App">
       <div className="SearchWrapper">
         <img className = "logo" src = {logo}></img>
+        <SearchBar></SearchBar>
       </div>
       <div className='SquareMessageWrapper'>
         <MessageSquare icon = {laptop} title = {title1} description={description1} link="https://duckduckgo.com/app" linkText="principales navegadores."/>
