@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  
 }
 
 .SquareMessageWrapper{
@@ -30,6 +31,20 @@
   max-width: 200px;
 }
 
+h1 {
+  font-family: "ProximaNova_ExtraBold";
+  font-size: 33px;
+  margin-bottom: 0;
+  font-weight: 100;
+}
+
+footer {
+  background: #58b792;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
@@ -51,4 +66,23 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.contenedor-bulletpoints{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 13px 15px;
+}
+
+.info1 {
+  margin: 0px;
+}
+
+.addButton {
+  background-color: #678fff;
+  font-family: 15px;
+  font-family: 'ProximaNova_SemiBold';
 }

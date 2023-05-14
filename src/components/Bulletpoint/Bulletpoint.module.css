@@ -1,0 +1,16 @@
+.bulletContainer{
+    display: flex;
+    align-items: center;
+    font-family: 'ProximaNova_Bold';
+    margin-right: 22px;
+}
+
+.bulletCheck{
+    height: 17px;
+    width: 17px;
+    margin-right: 6px;
+}
+
+.bulletText{
+    margin: 0px;
+}
