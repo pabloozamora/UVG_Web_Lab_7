@@ -1,0 +1,41 @@
+.square{
+    display: flex;
+    flex-direction: column;
+    width: 322px;
+    min-height: 322px;
+    border: 1px solid #282828;
+    border-radius: 18px;
+    background: #282828;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 50%);
+    margin: 10px;
+    align-items: center;
+    padding: 24px;
+}
+
+#icon{
+    
+    margin: 20px 20px 32px;
+    min-height: 72px;
+    max-height: 72px;
+
+}
+
+.cardTitle{
+    margin-bottom: 6px;
+    font-size: 21px;
+    line-height: 27px;
+    color: #eeeeee;
+}
+
+.cardText{
+    margin-top: 0;
+}
+
+.cardLink{
+    color: #678FFF;
+    font-family: 'ProximaNova_Bold';
+}
+
+.cardLink:hover{
+    color: #678FFF;
+}

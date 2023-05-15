@@ -1,0 +1,52 @@
+.headerMainContainer{
+    position: relative;
+}
+
+.headerContainer{
+    display: flex;
+    justify-content: flex-end;
+    padding: 1px 23px 0 23px;
+    margin-top: 22px;
+}
+
+.iconsContainer{
+    display: flex;
+    font-family: 'ddg-serp-icons';
+    color: #cccccc;
+}
+
+.socials{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+}
+
+.socials:hover{
+    color: #eeeeee;
+}
+
+
+.socials > *{
+    margin: 0;
+}
+
+.megaphone{
+    font-size: 25px;
+}
+
+.arrow{
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.menuContainer{
+    margin-left: 28px;
+}
+
+.hamburgerMenu{
+    cursor: pointer;
+}
+
+.hamburgerMenu:hover{
+    color: #eeeeee;
+}

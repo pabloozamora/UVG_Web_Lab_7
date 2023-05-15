@@ -1,7 +1,7 @@
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding-bottom: 0;
   text-align: center;
   
 }
@@ -9,13 +9,25 @@
 .SquareMessageWrapper{
   display: flex;
   flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+  min-height: 322px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 930px){
+  .SquareMessageWrapper{
+    flex-direction: column;
+      align-items: center;
+  }
 }
 
 .SearchWrapper{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 10px;
+  margin-top: 30px;
 }
 
 .Name{
@@ -85,4 +97,55 @@ footer {
   background-color: #678fff;
   font-family: 15px;
   font-family: 'ProximaNova_SemiBold';
+}
+
+.small-info{
+  margin-top: 14px;
+  font-size: 12px;
+  font-family: 'ProximaNova_Bold';
+  color: #eeeeee;
+  margin-bottom: 48px;
+}
+
+.info2{
+  font-size: 17px;
+  line-height: 24px;
+  font-family: 'ProximaNova_Bold';
+  color: #eeeeee;
+}
+
+.footerTitle{
+  font-size: 44px; 
+  line-height: 48px;
+  margin-top: 100px;
+  margin-bottom: 15px;
+  font-family: 'ProximaNova_Bold';
+  color: #fff;
+}
+
+.footerInfo{
+  font-size: 20px;
+  line-height: 28px;
+  font-family: 'ProximaNova_SemiBold';
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.footerButton{
+  font-size: 18px;
+  font-family: 'ProximaNova_SemiBold';
+  background: rgba(0,0,0,0.4);
+  transition: background-color .15s ease-out;
+  border-color: transparent;
+  color: #eeeeee;
+  text-shadow: none;
+  outline: none;
+  cursor: pointer;
+  border: 0;
+}
+
+.footerButton:hover{
+  outline: none;
+  background: rgba(0,0,0,0.5);
+  border: 0;
 }

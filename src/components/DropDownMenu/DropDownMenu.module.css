@@ -1,0 +1,39 @@
+.menuContainer{
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    background-color: #282828;
+    position: absolute;
+    border: 1px solid #282828;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    transition: opacity 0.4s;
+    border-radius: 5px;
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    right: 4.5%;
+    top: 50px;
+}
+
+.menuItem{
+    margin: 7.5px 15px 7.5px 15px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    height: 20px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.menuText{
+    margin: 0;
+    color: #ededed;
+}
+
+.menuText:hover{
+    text-decoration: underline;
+}
+
+.menuImg{
+    width: 20px;
+    margin-right: 10px;
+}
