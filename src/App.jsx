@@ -1,12 +1,11 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import React from 'react'
 import laptop from './assets/laptop.svg'
 import search from './assets/search.svg'
 import mobile from './assets/mobile.svg'
 import logo from './assets/logo.svg'
 import './App.css'
-import { MessageSquare } from './components/MessageSquare/MessageSquare'
-import { SearchBar } from './components/SearchBar/SearchBar'
+import MessageSquare from './components/MessageSquare/MessageSquare'
+import SearchBar from './components/SearchBar/SearchBar'
 import Bulletpoint from './components/Bulletpoint/Bulletpoint'
 import Header from './components/Header/Header'
 
@@ -21,8 +20,8 @@ function App() {
     <div className="App">
       <Header />
       <div className="SearchWrapper">
-        <img className = "logo" src = {logo}></img>
-        <SearchBar></SearchBar>
+        <img alt = "logo" className = "logo" src = {logo} />
+        <SearchBar />
       </div>
       <div className='contenedor-info'>
         <h1>¿Cansado de que te rastreen? Podemos ayudarte.</h1>
@@ -33,7 +32,7 @@ function App() {
         <Bulletpoint text='Bloqueo De Rastreadores' />
         <Bulletpoint text='Encriptación De Sitios' />
       </div>
-      <button className='addButton'>Añadir DuckDuckGo a Chrome</button>
+      <button type="submit" className='addButton'>Añadir DuckDuckGo a Chrome</button>
       <p className='small-info'>¡Con la confianza de decenas de millones de personas en todo el mundo!</p>
       <p className='info2'>Protección de la Privacidad para Cualquier Dispositivo</p>
       <div className='SquareMessageWrapper'>
@@ -60,13 +59,13 @@ function App() {
         />
       </div>
       <footer>
-        <h1 className='footerTitle'>No guardamos tu información <br></br>
+        <h1 className='footerTitle'>No guardamos tu información <br />
         personal. Y nunca lo haremos.</h1>
-        <p className='footerInfo'>Nuestra política de privacidad es simple: No colectamos <br></br>
+        <p className='footerInfo'>Nuestra política de privacidad es simple: No colectamos <br />
         o compartimos ninguna información personal tuya.</p>
-        <button className='footerButton'>Instalar DuckDuckGo</button>
+        <button type="submit" className='footerButton'>Instalar DuckDuckGo</button>
       </footer>
-      <img alt="Footer Image" src="https://duckduckgo.com/assets/onboarding/bathroomguy/1-monster-v2--pre-animation.svg" style={{ marginTop: '30px', width: '800px' }} />
+      <img alt="Footer pic" src="https://duckduckgo.com/assets/onboarding/bathroomguy/1-monster-v2--pre-animation.svg" style={{ marginTop: '30px', width: '800px' }} />
     </div>
   )
 }

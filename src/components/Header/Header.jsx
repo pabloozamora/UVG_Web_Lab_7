@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
+import React, { useState } from "react"
 import styles from './Header.module.css'
-import DropDownMenu from "../DropDownMenu/DropDownMenu";
+import DropDownMenu from "../DropDownMenu/DropDownMenu"
 
 const Header = () => {
     const [ displayMenu, setDisplayMenu ] = useState(false)
@@ -9,7 +11,7 @@ const Header = () => {
         <div className={styles.headerMainContainer}>
             <div className={styles.headerContainer}>
                 <div className={styles.iconsContainer}>
-                    <div className={styles.socials} onClick={() => setDisplayMenu(!displayMenu)}>
+                    <div className={styles.socials} onClick={() => setDisplayMenu(() => !displayMenu)}>
                         <p className={styles.megaphone}>H</p>
                         <p className={styles.arrow}>v</p>
                     </div>
@@ -23,4 +25,4 @@ const Header = () => {
     )
 }
 
-export default Header;
+export default Header
